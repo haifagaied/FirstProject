@@ -1,0 +1,5 @@
+<h2>{{ author.username|upper }}</h2>
+<img src="{{ asset(author.picture) }}" alt="{{ author.username }}" width="200">
+<p>Email : {{ author.email }}</p>
+<p>Nombre de livres : {{ author.nb_books }}</p>
+<a href="{{ path('list_author') }}">Retour à la liste</a>
